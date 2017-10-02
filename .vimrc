@@ -92,4 +92,6 @@ map <F5> :Make<CR><C-w><Up>
 let g:ctrlp_custom_ignore = 'build\'
 let g:ctrlp_working_path_mode = 0
 
+" Toggle source cpp and header files
 map <F3> :call CurtineIncSw()<CR>
+
