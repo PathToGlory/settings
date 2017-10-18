@@ -16,7 +16,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'ericcurtin/CurtineIncSw.vim'
-
+Plugin 'vim-airline/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,8 +38,8 @@ set shiftwidth=2
 set softtabstop=2
 
 "Highlight end column
-set colorcolumn=105
-highlight ColorColumn ctermbg=darkgray
+"set colorcolumn=105
+"highlight ColorColumn ctermbg=darkgray
 
 "Turn on relative number
 set relativenumber
@@ -78,6 +78,7 @@ command! MakeTags !ctags -R .
 let g:clang_format#auto_format = 1
 autocmd FileType *.c,*.cpp,*.h ClangFormatAutoEnable
 
+set autowrite
 set makeprg=ninja-build\ -C\ %:p:h/../../build/Debug
 
 " Command Make will call make and then cwindow which
@@ -95,3 +96,9 @@ let g:ctrlp_working_path_mode = 0
 " Toggle source cpp and header files
 map <F3> :call CurtineIncSw()<CR>
 
+"enable/disable highlighting
+nnoremap <F4> :set hlsearch! hlsearch?<CR>
+
+"Allow project specific .vimrc
+set exrc
+set secure
