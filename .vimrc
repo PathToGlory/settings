@@ -17,6 +17,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'ericcurtin/CurtineIncSw.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
