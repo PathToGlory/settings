@@ -18,6 +18,7 @@ Plugin 'ervandew/supertab'
 Plugin 'ericcurtin/CurtineIncSw.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'alepez/vim-gtest'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -94,11 +95,14 @@ map <F5> :Make<CR><C-w><Up>
 let g:ctrlp_custom_ignore = 'build\'
 let g:ctrlp_working_path_mode = 0
 
-" Toggle source cpp and header files
+"Toggle source cpp and header files
 map <F3> :call CurtineIncSw()<CR>
 
 "enable/disable highlighting
 nnoremap <F4> :set hlsearch! hlsearch?<CR>
+
+"Run google unit tests
+nnoremap <F8> :GTestRun<CR>
 
 "Allow project specific .vimrc
 set exrc
