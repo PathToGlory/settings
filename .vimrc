@@ -19,6 +19,8 @@ Plugin 'ericcurtin/CurtineIncSw.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'alepez/vim-gtest'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/Conque-GDB'
 Plugin 'peterhoeg/vim-qml'
 
 " All of your Plugins must be added before the following line
